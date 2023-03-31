@@ -1,0 +1,156 @@
+*{
+     padding:0;
+     margin:0;
+}
+.container{
+     padding-right:15px;
+     padding-left:15px;
+     margin-right:auto;
+     margin-left:auto;
+}
+
+body{
+     font-family: 'Kumbh Sans', sans-serif;
+     background-color: hsl(185, 75%, 39%);
+}
+body:before{
+     position: absolute;
+     content: "";
+     transform: translate(-50%, -50%);
+     left: 15%;
+     top: 19%;
+     width: 809px;
+     height: 797px;
+     background-image: url(../images/bg-pattern-top.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+@media(max-width:767px){
+     body:before{
+          width: 437px;
+          height: 417px;
+          top: 14%;
+          left: 24%;
+     }
+}
+/* End Global Rules */
+
+/*  Start Main */
+main{
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     background-color:#fff;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+main .bg-image img{
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+main .bg-image:before{
+     position: absolute;
+     content: "";
+     width: 96px;
+     height: 96px;
+     left: 50%;
+     bottom: 40%;
+     transform: translate(-50%, -50%);
+     background-color: blue;
+     border: 1px solid #FFF;
+     background-image: url(../images/image-victor.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 50%;
+ }
+
+main .text{
+     text-align: center;
+}
+
+main .text h1{
+     padding-top:55px;
+     padding-bottom:10px;
+}
+main .text h1 span{
+     font-weight: 100;
+     font-size: 18px;
+}
+main .text p{
+     font-weight: 100;
+     font-size: 18px;
+}
+
+main .contents{
+     text-align: center;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     position: relative;
+}
+
+
+main .contents:before{
+     position: absolute;
+     content: "";
+     width: 99%;
+     left: 2px;
+     top: 15px;
+     height: 1px;
+     background-color: #d3d3d3;
+}
+main .contents .tweets{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     padding-top: 25px;
+     padding-bottom: 20px;
+}
+main .contents .tweets .tweet p{
+     font-size: 10px;
+     padding-top: 7px;
+     font-family: 'Kumbh Sans', sans-serif;
+}
+
+footer::after{
+     position: absolute;
+     content: "";
+     bottom: 0px;
+     right: 1px;
+     width: 640px;
+     height: 455px;
+     background-image: url(../images/bg-pattern-bottom.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+@media(max-width:767px){
+     footer::after{
+          bottom: 0px;
+          right: 1px;
+          width: 258px;
+          height: 487px;
+     }
+}
+/*  End Main */
+
+/*  Start Media Queries */
+@media(min-width:768px){
+     .container{
+          max-width:720px;
+     }
+}
+
+@media(min-width:992px){
+     .container{
+          max-width:960px;
+     }
+}
+
+@media(min-width:1440px){
+     .container{
+          max-width:1400px;
+     }
+}
+/*  End Media Queries */
